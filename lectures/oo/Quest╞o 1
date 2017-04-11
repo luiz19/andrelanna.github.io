@@ -1,0 +1,28 @@
+Classe: Uma classe é o agrupamento de objetos com a mesma estrutura de dados, definida
+pelos atributos ou características e pelos métodos ou comportamentos, ou seja, classe é a descrição do objeto.
+
+Objeto: Objeto é uma classe sendo estanciada. De maneira mais conceitual, um objeto é algo único
+que contém atributos e possui um comportamento. Cada objeto tem uma identidade e é distinguível de outro mesmo que seus
+atributos sejam idênticos.
+
+Elementos de uma classe: Uma classe contém atributos e métodos.
+
+Atributos: Atributos são o conjunto de características de uma classe. São definidos por algum tipo de dado que receberá um determinado valor
+posteriormente.
+
+Métodos: Métodos são o conjunto de funcionalidades da classe. Para cada método, especifica-se sua assinatura, composta por: 
+Nome, tipo, lista de argumentos e visibilidade.
+
+Método construtor padrão: O Método construtor padrão é aquele que não recebe nenhum parâmetro.
+Em termos mais simples, é aquele que não recebe nenhuma informação. Ele será sempre executado quando um objeto for criado.
+
+Método construtor alternativo: O Método construtor alternativo é aquele que recebe parâmetros previamente.
+
+Estado de um objeto: Estado de um objeto é o conjunto de valores que os atributos recebem em um dado momento, podendo ser alterado a 
+partir de seus métodos.
+
+Retenção de estado: Retenção de estado é a capacidade que um objeto tem de manter seu estado inicial, ou seja, os valores dos seus
+atributos até a próxima alteração.
+
+
+

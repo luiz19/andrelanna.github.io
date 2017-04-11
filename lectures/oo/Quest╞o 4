@@ -1,0 +1,30 @@
+public class Drone {
+	String marca; 
+	String modelo; 
+	int N_de_hélices; 
+	String câmera;
+  int Vel_vert_max;
+	int Vel_hor_max;
+  int Autonomia_bateria;
+  int Distância_máxima;
+
+	
+	Bicicleta(String mar, String mod, , int a, String cam, int b, int c, int d, int e) {
+		marca = mar;
+		modelo = mod;
+	  N_de_hélices = a; 
+	  câmera = cam;
+    Vel_vert_max = b;
+	  Vel_hor_max = c;
+    Autonomia_bateria = d;
+    Distância_máxima = e;
+	}
+	public static void main (String[] args) {
+		Drone drone1,
+          drone2,
+          drone3,
+          drone4;
+		drone1 = new Drone("Hubsan", "X4 mini", 4, "SD", 10, 10, 7, 150);
+		drone2 = new Drone("Hubsan", "H501S X4 FPV", 4, "HD", 12, 12, 20, 1000;
+		drone3 = new Drone("DJI", "Mavic Pro", 4, "UHD", 16, 16, 27, 13000);
+    drone4 = new Drone("DJI", "Spreading Wings", 8, "SUHD", 16, 16, 15, 13000);

@@ -1,0 +1,32 @@
+a) Dois objetos instanciados através do método construtor padrão terão o mesmo estado e, portanto, suas referências serão iguais.
+
+Errado. Dois objetos instanciados através do método construtor padrão poderão ter o mesmo estado, porém, suas referências serão 
+distintas. a) Dois objetos instanciados através do método construtor padrão poderão ter o mesmo estado, porém, suas referências 
+serão distintas
+
+b) Uma classe pode ter apenas um método construtor alternativo para instanciação de seus objetos.
+
+Errado.  Se for utilizado mais de um construtor, o Java será inteligente o suficiente para saber qual método utilizar dependendo dos
+parâmetros que forem passados. Porém, obviamente se forem criados dois construtores com a mesma lista de parâmetros, haverá problemas.
+b) Uma classe pode ter mais de um método construtor alternativo para instanciação de seus objetos.
+
+c) Retenção de estados é uma propriedade do paradigma OO que permite aos objetos manterem os valores de seus atributos até o momento em 
+que um estímulo externo ao objeto solicite uma alteração no valor de algum atributo.
+
+Correto. A retenção de estados permite que os objetos mantenham os valores de seus atributos até o momento em que estímulo externo ao
+objeto (Método) solicite a alteração.
+
+d) Em Java, o operador . (ponto) serve para acessar somente os métodos de um objeto.
+
+Errado. O operador ponto serve para acessar atributos também. d) Em Java, o operador . (ponto) serve para acessar os atributos e métodos de
+um objeto.
+
+e) Métodos destrutores são aqueles métodos que são chamados explicitamente pelo algoritmo para destruir objetos e liberar os espaços que
+eles ocupam em memória. Em Java métodos destrutores são implementos com o nome finalize() e definidos em cada classe.
+
+Correto. O método finalize() especifica o que deve ser feito antes do espaço do objeto ser retomado pelo garbage collector.Este método
+é definido na classe Object como protected. Ao contrário do que acontece com construtores(onde o método correspondente na superclasse
+é automaticamente invocado), o método finalizador da superclasse deve ser invocado explicitamente (super.finalize()) ao final do corpo
+do finalizador local.
+
+

@@ -1,0 +1,81 @@
+
+public class Drone {
+	int N_de_hélices_max;
+	int N_de_hélices_min;
+	int N_de_hélices_med = 6;
+	String Câmera;
+	int Vel_vert_max;
+	int Vel_vert_min;
+	int Vel_hor_max;
+	int Vel_hor_min;
+	int Autonomia_bateria_max;
+	int Autonomia_bateria_min;
+	int Distância_max;
+	int Distância_min;
+	double Vel_vert_atual;
+	double Vel_hor_atual;
+	int Autonomia_atual;
+	
+	Drone() {
+		N_de_hélices_max = 8;
+		N_de_hélices_min = 4;
+		N_de_hélices_med = 6;
+		Câmera = "não definida";
+		Vel_vert_max = 16;
+		Vel_vert_min = 10;
+		Vel_hor_max = 16;
+		Vel_hor_min = 10;
+		Autonomia_bateria_max = 30;
+		Autonomia_bateria_min = 5;
+		Distância_max = 20000;
+		Distância_min = 50;
+		}
+	// Inicia gravação
+    void iniciarGravação() {
+        System.out.println("Gravação iniciada");
+    }
+    // Interrompe gravação
+    void encerrarGravação() {
+        System.out.println("Gravação encerrada");
+    }
+    //Acelera verticalmente
+    void aceleraVerticalmente(double quantidade) {
+        double velocidadeVerticalNova = this.Vel_vert_atual + quantidade;
+        this.Vel_vert_atual = velocidadeVerticalNova;
+    }
+  //Acelera horizontalmente
+    void aceleraHorizontalmente(double quantidade) {
+        double velocidadeHorizontalNova = this.Vel_hor_atual + quantidade;
+        this.Vel_hor_atual = velocidadeHorizontalNova;
+    }
+  //Desacelera verticalmente
+    void desaceleraVerticalmente(double quantidade) {
+        double velocidadeVerticalNova = this.Vel_vert_atual - quantidade;
+        this.Vel_vert_atual = velocidadeVerticalNova;
+    }
+  //Desacelera horizontalmente
+    void desaceleraHorizontalmente(double quantidade) {
+        double velocidadeHorizontalNova = this.Vel_hor_atual - quantidade;
+        this.Vel_hor_atual = velocidadeHorizontalNova;
+    }
+    /*diminui velocidades máxima (horizontal e vertical) em 50% sempre que a autonomia da 
+     * bateria for menor do que 5 minutos
+	 */
+    void desaceleraHorizontal() {
+    	if(Autonomia_atual < 5){
+        double velocidadeHorizontalNova = this.Vel_hor_atual/2;
+        this.Vel_hor_atual = velocidadeHorizontalNova;
+    	}
+    }
+    	void desaceleraVertical() {
+        	if(Autonomia_atual < 5){
+            double velocidadeVerticalNova = this.Vel_vert_atual/2;
+            this.Vel_vert_atual = velocidadeVerticalNova;
+        	}
+    }
+	public static void main(String[] args) {
+		
+
+	}
+
+}
